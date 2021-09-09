@@ -11,5 +11,9 @@
 10. Prayer Timing Section
 11. Footer Section
 
-# Bellow website Link:
+# Bellow website Link
 https://azizuits.github.io/salat_project/
+
+# Screenshot
+<img src="screenshot.jpeg">
+
