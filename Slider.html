@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- owl carousel css file -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <title>Slider</title>
+    <style>
+        .owl-carousel {
+            width:100%;
+            height:100vh;
+        }
+        .item{
+            width:100%;
+            height:100vh;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .item:before{
+            content:"";
+            position: absolute;
+            width:100%;
+            height: 100vh;
+            left:0;
+            top:0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .image-1{
+            background-image: url('image/banner-img-1.jpg');
+        }
+        .image-2{
+            background-image: url('image/inner-banner.jpg');
+        }
+        .image-3{
+            background-image: url('image/parallax-bg-2.jpg');
+        }
+        .owl-prev,.owl-next{
+            position: absolute;
+          top:50%;
+         transform: translateY(-50%);
+          color:white !important;
+          font-size: 30px !important;  
+      }
+      .owl-theme .owl-nav [class*="owl-"]:hover {
+          background-color: red;
+      }
+      .owl-prev{
+          right:10%;
+          top:5%;
+      }
+      .owl-next{
+          right:1%;
+          top:5%;
+      }
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    padding:0px 15px !important;
+border:2px solid orange;
+
+}
+
+/* dots */
+.owl-dots{
+          width:100%;
+          position: absolute;
+          text-align: center;
+          bottom:5%;
+      }
+      .owl-theme .owl-dots .owl-dot span{
+          width:20px !important;
+          height:20px !important;
+        background-color: white !important;
+          margin:0 25px;
+      }
+      .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+          background: orange !important;
+}
+
+      /*
+      .owl-dots button{
+          border:none !important;
+          outline:none !important;
+      } */
+    </style>
+</head>
+<body>
+   
+    <div class="owl-carousel owl-theme">
+        <div class="item image-1">
+        
+        </div>
+        <div class="item image-2">
+          
+        </div>
+        <div class="item image-3">
+            
+        </div>
+     
+        
+    </div>
+
+
+
+
+    <!-- js code -->
+ 
+    <!-- js file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <!-- owl carousel js file -->
+    <script src="js/owl.carousel.min.js"></script>
+     
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+               items:1,
+               nav:true,
+               loop:true,
+               autoplay:false,
+               autoplayTimeout:1000,
+               dots:true,
+            //    margin:50
+            mouseDrag:false
+               
+            });
+        })
+    </script>
+
+</body>
+</html>
